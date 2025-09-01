@@ -17,7 +17,6 @@ export default function HomePage() {
 
   return (
     <main className="app">
-      <h1>Users</h1>
       <section className="grid">
         {users.map((user) => (
           <User key={user.id} user={user} />
