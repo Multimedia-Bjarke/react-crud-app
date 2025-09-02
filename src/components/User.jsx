@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router";
+
 export default function User({ user }) {
+  const navigate = useNavigate();
+
+  function handleClick(params) {
+    navigate("/users/${user.id}");
+  }
+
   return (
     <article className="user-card">
       <img
